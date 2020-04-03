@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>List Manager</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="./../CSS/general.css">
+  </head>
+  <body id="main">
+    <div class="container-fluid">
+
+      <!-- sidebar and content -->
+      <div class="row">
+        <div class="col-3">
+          <!-- sidebar title -->
+          <p class="text-center"><i>Lists</i></p>
+          <hr>
+
+          <!-- checkbox for detailed/simple views -->
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="simpleViewCheckbox">
+            <label class="custom-control-label" for="simpleViewCheckbox">Simple View</label>
+          </div>
+
+          <!-- sidebar target divs -->
+          <hr>
+          <ul id="sidebar-target" class="list-group"></ul>
+          <hr>
+          <input id="sidebar-input" type="text"></input>
+        </div>
+        <div class="col-9">
+          <!-- content title -->
+          <p class="text-center"><i>Items</i></p>
+          <hr>
+          <!-- content target div -->
+          <ul id="content-target" class="list-group"></ul>
+          <hr>
+          <textarea id="content-input" style="width:100%; resize:none; height:100px;"></textarea>
+          <input id="deadline-input" type="date">
+          <hr>
+        </div>
+      </div>
+
+    </div>
+    <!-- my javascript -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
